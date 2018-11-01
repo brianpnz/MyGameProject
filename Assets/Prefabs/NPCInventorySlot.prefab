@@ -38,9 +38,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224953424820480976}
-  - component: {fileID: 114684530808197054}
+  - component: {fileID: 114314869583142396}
   m_Layer: 5
-  m_Name: InventorySlot
+  m_Name: NPCInventorySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,6 +109,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114314869583142396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1226677938962696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55826a0726835b54499ee4f95d982ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  removeButton: {fileID: 0}
 --- !u!114 &114356086969655548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,7 +161,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114684530808197054}
+      - m_Target: {fileID: 0}
         m_MethodName: UseItem
         m_Mode: 1
         m_Arguments:
@@ -200,7 +213,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114684530808197054}
+      - m_Target: {fileID: 0}
         m_MethodName: onRemoveButton
         m_Mode: 1
         m_Arguments:
@@ -251,19 +264,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114684530808197054
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1226677938962696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b765888ba3ee34781b37b2604555e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  icon: {fileID: 114053872310448958}
-  removeButton: {fileID: 114357453808166686}
 --- !u!114 &114743621067088580
 MonoBehaviour:
   m_ObjectHideFlags: 1

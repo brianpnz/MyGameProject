@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour, IDropHandler
+public class NPCInventorySlot : MonoBehaviour, IDropHandler
 {
 
     public Image icon;
@@ -31,7 +31,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 
     public void onRemoveButton()
     {
-        Inventory.instance.Remove(item);
+        NPCInventory.instance.Remove(item);
     }
 
     public void UseItem()
@@ -40,9 +40,6 @@ public class InventorySlot : MonoBehaviour, IDropHandler
         {
             item.Use();
         }
-
-        NPCInventory.instance.Add(item);
-        Inventory.instance.Remove(item);
     }
 
     public void OnDrop(PointerEventData eventData)

@@ -12,10 +12,13 @@ public class StoriesScript : MonoBehaviour
 
     void Awake()
     {
-        // Remove the default message
+        //Get the canvas where the stories are displayed
+        mainCanvas = GameObject.Find("StoryCanvas");
 
+        // Remove the default message
         RemoveChildren();
-        StartStory();
+        mainCanvas.SetActive(false);
+        //StartStory();
     }
 
     // Creates a new Story object with the compiled story which we can then play!

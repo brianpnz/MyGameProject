@@ -15,5 +15,7 @@ public class Item : ScriptableObject {
         // Something might happen
 
         Debug.Log("Using " + name);
+
+
     }
 }
